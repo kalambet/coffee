@@ -60,6 +60,16 @@
                                     <segue destination="aWn-7f-VCb" kind="show" id="iB8-fr-bsH"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="udid" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eqF-t9-WQ2" userLabel="myLabel">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <accessibility key="accessibilityConfiguration" label="myLabel"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="82" y="494" width="264" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.98431372549019602" green="0.8784313725490196" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
                         <gestureRecognizers/>
@@ -70,6 +80,7 @@
                                 <exclude reference="scn-p2-91e"/>
                                 <exclude reference="xlx-g6-dYo"/>
                                 <exclude reference="GU7-C8-Wwn"/>
+                                <exclude reference="eqF-t9-WQ2"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -79,12 +90,18 @@
                                 <include reference="scn-p2-91e"/>
                                 <include reference="xlx-g6-dYo"/>
                                 <include reference="GU7-C8-Wwn"/>
+                                <include reference="eqF-t9-WQ2"/>
                             </mask>
                         </variation>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="eap-xn-iM2" appends="YES" id="Dm5-PL-jcJ"/>
                         </connections>
                     </view>
+                    <connections>
+                        <outlet property="coffeeFact" destination="3GD-mf-bKm" id="LFL-AZ-JLE"/>
+                        <outlet property="myLabel" destination="eqF-t9-WQ2" id="EjR-tx-Gww"/>
+                        <outlet property="showStat" destination="GU7-C8-Wwn" id="ny5-zk-FOf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
                 <swipeGestureRecognizer direction="right" id="eap-xn-iM2">
@@ -93,6 +110,7 @@
                     </connections>
                 </swipeGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="60" y="136"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="38d-l5-Qyq">
@@ -103,6 +121,7 @@
                         <viewControllerLayoutGuide type="bottom" id="CGb-89-rEv"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uW1-pC-xu8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMu-uY-I0P">
@@ -193,6 +212,7 @@
                         <viewControllerLayoutGuide type="bottom" id="oGO-YC-nbb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="f2F-NE-weH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zII-Nb-kkw">
@@ -251,6 +271,6 @@
         <image name="hot16_256.png" width="256" height="341"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="du5-ln-8Pd"/>
+        <segue reference="tcy-sj-Nwv"/>
     </inferredMetricsTieBreakers>
 </document>

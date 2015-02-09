@@ -9,10 +9,22 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var coffeeFact: UITextView!
+    @IBOutlet weak var showStat: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
+        let userid = UIDevice.currentDevice().identifierForVendor.UUIDString
+        
+        self.myLabel.text = userid
+
+        
     }
 
     override func didReceiveMemoryWarning() {
